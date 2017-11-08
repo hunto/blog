@@ -1,6 +1,6 @@
 Hello, Github page
 ==================
-![avatar](../assets/img/2017-11-08-Hello\,github\ page/img1.jpg)
+![](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/2017-11-08-Hello%2Cgithub%20page/img1.jpg)
 
 前言
 ----
