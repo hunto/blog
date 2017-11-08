@@ -1,3 +1,14 @@
+---
+layout: post
+title: 'Hello, github page'
+subtitle: '加入github.io'
+date: 2017-11-08
+categories: HelloWorld
+cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/2017-11-08-Hello%2Cgithub%20page/img1.jpg'
+tags: HelloWorld
+---
+
+
 Hello, Github page
 ==================
 ![](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/2017-11-08-Hello%2Cgithub%20page/img1.jpg)
