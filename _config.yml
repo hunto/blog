@@ -12,6 +12,9 @@ nav:
   home: '/'
   tags: '/tags.html'
 
+# mathjax
+mathjax: true
+
 # Author 配置博主信息
 author: 'Hunto'
 nickname: 'TT'
@@ -25,8 +28,9 @@ search: true
 nightMode: true
 
 # Comments
-disqus: true
-disqus_url: 'https://huntocn.disqus.com/embed.js'
+comments:
+  disqus: true
+  disqus_url: 'https://huntocn.disqus.com/embed.js'
 
 # Share
 social-share: true
