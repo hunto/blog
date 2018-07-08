@@ -25,8 +25,8 @@ search: true
 nightMode: true
 
 # Comments
-disqus: false
-disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+disqus: true
+disqus_url: 'https://huntocn.disqus.com/embed.js'
 
 # Share
 social-share: true
