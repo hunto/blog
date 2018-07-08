@@ -19,6 +19,7 @@ layout: default
             {% endfor %}
         {% endif %}
         </li>
+        
         {% for tag in site.tags %}
         <li>
             <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
@@ -26,8 +27,6 @@ layout: default
             <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
-        
-        </div>
         {% endfor%}
     </ul>
 </main>

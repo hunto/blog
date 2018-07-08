@@ -1,7 +1,7 @@
 ---
 layout: default
-home-title: Hunto的个人主页
-description: 喜欢计算机的小白
+home-title: H2O Theme For Jekyll
+description: 或许是最漂亮的Jekyll主题
 ---
 
 {% include header.html %}
@@ -20,12 +20,12 @@ description: 喜欢计算机的小白
             <article class="article-item">
                 {% if post.cover %}
                 <div class="post-cover">
-                    <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
-                    <img src="{{ post.cover }}" alt="">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a>
+                    <img src="{{ post.cover }}" href="{{ post.url | prepend: site.baseurl }}" alt="">
                 </div>
                 {% endif %}
                 <section class="post-preview">
-                    <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a>
                     <h2 class="post-title">{{ post.title }}</h2>
                     {% if post.subtitle %}
                     <h3 class="post-subtitle">{{ post.subtitle }}</h3>
@@ -90,7 +90,7 @@ description: 喜欢计算机的小白
 
         {% if site.search %}
         <div class="search-card">
-            <input id="search_input" type="text" placeholder="Search...">
+            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
             <i class="iconfont icon-search"></i>
             <div class="search_result"></div>
         </div>
