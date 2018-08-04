@@ -3,7 +3,7 @@ layout: post
 title: 'CS224n笔记 - assignment1'
 subtitle: 'Assignment1'
 date: 2018-07-06
-categories: 机器学习 NLP CS224n
+categories: CS224n
 tags: CS224n 机器学习 深度学习 NLP
 ---
 

@@ -4,7 +4,7 @@ cover: 'http://bbs.dian.org.cn/assets/uploads/files/1533314431152-88059bbd-1468-
 title: 'CS231n Convolutional Neural Networks for Visual Recognition - 要点记录'
 subtitle: 'CS231n Convolutional Neural Networks for Visual Recognition'
 date: 2018-08-04
-categories: 机器学习 CV CS231n
+categories: CS231n
 tags: CS231n 机器学习 深度学习 CV
 ---
 
