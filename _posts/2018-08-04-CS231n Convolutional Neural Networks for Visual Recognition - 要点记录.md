@@ -122,8 +122,63 @@ Loop:
 
 ![0_1533313764133_12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png](http://bbs.dian.org.cn//assets/uploads/files/1533313772058-12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png) 
 
+![0_1533356513089_f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png](http://bbs.dian.org.cn/assets/uploads/files/1533356518210-f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png) 
+
 **Features**
 * Improves gradient flow through the network
 * Allows higher learning rates
 * Reduces the strong dependence on initialization
 * Acts as a form of regularization in a funny way, and slightly reduces the need for dropout, maybe
+
+---
+
+# Lecture7
+## 1. Optimizer
+* SGD
+
+$$x_{t+1}=x_t-\alpha \nabla f(x_t)$$
+
+* SGD + Momentum
+
+$$v_{t+1}=\rho v_t+\nabla f(x_t)$$
+
+$$x_{t+1}=x_t-\alpha v_{t+1}$$
+
+* Nesterov Momentum
+
+$$v_{t+1}=\rho v_t-\alpha\nabla f(x_t+\rho v_t)$$
+
+$$x_{t+1}=x_t+v_{t+1}$$
+
+* AdaGrad
+
+$$dx=\nabla f(x_t)$$
+
+$$g = g+(dx)^2$$
+
+$$x_{t+1}=x_t - \alpha \frac{dx}{\sqrt g +  10^{-7}}$$
+
+* RMSProp
+
+$$dx=\nabla f(x_t)$$
+
+$$g = \beta g+(1-\beta)(dx)^2$$
+
+$$x_{t+1}=x_t - \alpha \frac{dx}{\sqrt g +  10^{-7}}$$
+
+* Adam (almost)
+  ```python
+  first_moment = 0
+  second_moment = 0
+  while True:
+      dx = compute_gradient(x)
+      first_moment = beta1 * first_moment + (1 - beta1) * dx
+      second_moment = beta2 * sencond_moment + (1 - beta2) * dx * dx
+      x -= learning_rate * first_moment / (np.sqrt(second_moment) + 1e-7)
+  ```
+
+* Adam (full form)
+![0_1533359223607_c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png](http://bbs.dian.org.cn/assets/uploads/files/1533359225868-c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png) 
+
+## 2. Dropout
+![0_1533359359049_b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png](http://bbs.dian.org.cn/assets/uploads/files/1533359363244-b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png) 
