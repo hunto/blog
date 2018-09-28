@@ -8,6 +8,9 @@ categories: VQA
 tags: VQA 机器学习 深度学习 CV
 ---
 
+[Visual Question Answering with Memory-Augmented Networks](https://arxiv.org/pdf/1707.04968)
+
+
 在一般的VQA问题中，我们使用梯度下降来更新模型，使用低频截断来减少答案分类数，这样会造成模型对低频答案得到的分数较低，难以得到正确答案。这篇文章介绍了一种新的Memory-Augmented方法来解决这一问题。
 
 ## 模型结构
