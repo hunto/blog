@@ -26,7 +26,7 @@ $$\lbrace v_1, ..., v_N \rbrace, N=196$$
 
 ### 2. Sequential Co-Attention 协同注意力
 
-![0_1538182846732_dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png](/assets/uploads/files/1538182847906-dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png) 
+![0_1538182846732_dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png](https://bbs.dian.org.cn/assets/uploads/files/1538182847906-dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png) 
 
 这里用的是Parallel模型，主要是为了做attention提取出question与image的相关的特征。
 
