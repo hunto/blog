@@ -10,6 +10,8 @@ tags: VQA 机器学习 深度学习 CV
 
 [Visual Question Answering with Memory-Augmented Networks](https://arxiv.org/pdf/1707.04968)
 
+**引用论文**
+[Hierarchical Question-Image Co-Attention for Visual Question Answering](https://arxiv.org/pdf/1606.00061.pdf)
 
 在一般的VQA问题中，我们使用梯度下降来更新模型，使用低频截断来减少答案分类数，这样会造成模型对低频答案得到的分数较低，难以得到正确答案。这篇文章介绍了一种新的Memory-Augmented方法来解决这一问题。
 
@@ -24,9 +26,9 @@ $$\lbrace v_1, ..., v_N \rbrace, N=196$$
 
 ### 2. Sequential Co-Attention 协同注意力
 
-![0_1538123095867_ec71b638-cec8-4540-ae83-553836c01644-image.png](https://bbs.dian.org.cn/assets/uploads/files/1538123096862-ec71b638-cec8-4540-ae83-553836c01644-image.png) 
+![0_1538182846732_dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png](/assets/uploads/files/1538182847906-dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png) 
 
-这里主要是为了做attention提取出question与image的相关的特征。
+这里用的是Parallel模型，主要是为了做attention提取出question与image的相关的特征。
 
 First, compute a base vector $m_0$:
 
