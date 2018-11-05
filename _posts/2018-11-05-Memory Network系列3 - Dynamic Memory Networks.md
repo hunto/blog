@@ -27,7 +27,7 @@ tags: MemoryNetworks 机器学习 深度学习
 与MemNN类似，DMN也由4个部分组成：
 
 ### Input Module
-输入模块将文本转换为向量表示作为memory的输入。本文使用 GRU  处理文本输入，将GRU的hidden state作为输出。需要注意的是，对于不同的输入有不同的输出方法。若输入的是一句话，输出则为句子中每个词的hidden state，最终会得到句子长度个向量；若输入的是多个句子，则将多个句子cat到一起，句子间用一个标志<EOF>间隔，取每次输入<EOF>后的hidden state作为输出，最终会得到句子个数个向量。模块输出为 $$c$$。
+输入模块将文本转换为向量表示作为memory的输入。本文使用 GRU  处理文本输入，将GRU的hidden state作为输出。需要注意的是，对于不同的输入有不同的输出方法。若输入的是一句话，输出则为句子中每个词的hidden state，最终会得到句子长度个向量；若输入的是多个句子，则将多个句子cat到一起，句子间用一个标志<EOF>间隔，取每次输入<EOF>后的hidden state作为输出，最终会得到句子个数个向量。模块输出为$$c$$。
 
 ### Question Module
 本部分输入为一个问题，与input module类似，question model也将句子经过一个GRU，但这里我们只需要RNN的final state作为输出。模块输出为 $$q$$ 。最后一层记忆的输出 $$m^k$$ 为最后的模块输出。
@@ -50,7 +50,8 @@ $$h_t^k = g_t^k GRU(c_t, h_{t-1}^k) + (1 - g^k_t)h_{t-1}$$
 
 本部分将 $$c_t$$ 与其对应的 $$g_t$$ 输入上述修改后GRU中，取 final state作为该层记忆输出 $$e^k$$。
 
-**Attention Mechanism**
+**Attention Mechanism**  
+
 本文使用了一个门函数作为Attention Mechanism。序列中的每一个节点的gate值都由当前节点值 $$c_t$$、前一层的输出 $$m^{k-1}$$、$$q$$ 决定。
 
 $$g_t^k = G(c_t, m^{k-1}, q)$$
