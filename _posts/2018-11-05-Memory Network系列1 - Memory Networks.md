@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://bbs.dian.org.cn/assets/uploads/files/1538122133972-3b5518ed-8308-4f92-b6fc-3c076a887f14-image.png'
+cover: ''
 title: 'Memory Network系列1 - Memory Networks'
 subtitle: ''
 date: 2018-11-05
@@ -41,6 +41,8 @@ Memory Network由FaceBook于2014年提出，是一种相对较新的模型框架
 
 这样的一个步骤同时用于train和test，不同的地方在于，在test过程中，我们不需要更新 $$I, G, O, R$$ 的权重。
 
+---
+
 ## Components 详述
 ### $G$ component
 最简单的实现方式是将输入存储到内存的一个“插槽”（Array的某一行）中：
@@ -57,6 +59,8 @@ $$m_{H(x)}=I(x)$$
 
 ### $$O$$ and $$R$$ components
 $$O$$ 主要实现相关信息的检索，对于输入 $$I(x)$$，$$O$$ 可以找出与其最相关的top-k个记忆，将其输入 $$R$$ 中得到最终的输出，$$R$$ 可以是一个 RNN，这样与单独使用 RNN 的不同之处在于，记忆网络通过 $$O$$ 对一长串记忆的检索聚焦，将输入 RNN 的序列长度缩短，且输入的序列为与输入 $$x$$ 最相关的内容。这样就实现了难以遗忘的长期记忆机制。
+
+---
 
 ## A MemNN Implementation for Text
 本文还介绍了Memory Network在TextQA中的应用，需要完成的任务是根据输入的多个句子，回答基于句子内容的提问。
@@ -104,6 +108,8 @@ $$s(x,y)=\Phi_x(x)^TU^T\Phi_y(y)$$
 ### Sample
 
 ![0_1541402134848_sample.png](https://bbs.dian.org.cn/assets/uploads/files/1541402135850-sample.png) 
+
+---
 
 ## 本文Memory Network的缺点
 * 需要很强的标注信息。由于 $$R$$ 的梯度不能回传给 $$O$$，网络不是端到端的，需要额外的标注用于训练 $$R$$，而并不是所有的数据集都像BabI一样是有关联标注的
