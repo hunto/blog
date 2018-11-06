@@ -114,7 +114,7 @@ $$Z_i^k = W^{(2)}tanh(W^{(1)}z_i^k+b^{(1)})+b^{(2)}$$
 
 $$g_i^k=Softmax(Z_i^k)$$
 
-其中，$$| \cdot |$$ 是 element-wise absolute。
+其中，$$|\cdot|$$ 是 element-wise absolute。
 
 ---
 
