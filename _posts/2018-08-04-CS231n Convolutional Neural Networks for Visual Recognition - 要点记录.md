@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'http://bbs.dian.org.cn/assets/uploads/files/1533314431152-88059bbd-1468-437f-a9b9-ffc3109d6364-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533314431152-88059bbd-1468-437f-a9b9-ffc3109d6364-image.png'
 title: 'CS231n Convolutional Neural Networks for Visual Recognition - 要点记录'
 subtitle: 'CS231n Convolutional Neural Networks for Visual Recognition'
 date: 2018-08-04
@@ -122,7 +122,7 @@ Loop:
 
 ![0_1533313764133_12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png](http://bbs.dian.org.cn//assets/uploads/files/1533313772058-12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png) 
 
-![0_1533356513089_f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png](http://bbs.dian.org.cn/assets/uploads/files/1533356518210-f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png) 
+![0_1533356513089_f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533356518210-f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png) 
 
 **Features**
 * Improves gradient flow through the network
@@ -178,7 +178,7 @@ $$x_{t+1}=x_t - \alpha \frac{dx}{\sqrt g +  10^{-7}}$$
   ```
 
 * Adam (full form)
-![0_1533359223607_c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png](http://bbs.dian.org.cn/assets/uploads/files/1533359225868-c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png) 
+![0_1533359223607_c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533359225868-c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png) 
 
 ## 2. Dropout
-![0_1533359359049_b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png](http://bbs.dian.org.cn/assets/uploads/files/1533359363244-b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png) 
+![0_1533359359049_b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533359363244-b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png) 
