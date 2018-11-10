@@ -94,20 +94,20 @@ $$s(x,y)=\Phi_x(x)^TU^T\Phi_y(y)$$
 ### Loss Function
 本模型的Loss Function如下：
 
-![0_1541402046609_loss.png](https://bbs.dian.org.cn/assets/uploads/files/1541402047077-loss.png) 
+![0_1541402046609_loss.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541402047077-loss.png) 
 
 实际上，本模型分为两个部分，$$O$$ 和 $$R$$，Loss2产生的梯度是不能够backpropagation到 $$O$$ 处的。
 
-![0_1541402070035_bp.png](https://bbs.dian.org.cn/assets/uploads/files/1541402071205-bp.png) 
+![0_1541402070035_bp.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541402071205-bp.png) 
 
 
 ### Performance
 
-![0_1541402118929_performance.png](https://bbs.dian.org.cn/assets/uploads/files/1541402119601-performance.png) 
+![0_1541402118929_performance.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541402119601-performance.png) 
 
 ### Sample
 
-![0_1541402134848_sample.png](https://bbs.dian.org.cn/assets/uploads/files/1541402135850-sample.png) 
+![0_1541402134848_sample.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541402135850-sample.png) 
 
 ---
 

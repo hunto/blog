@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://bbs.dian.org.cn/assets/uploads/files/1541406370117-493f70b3-1bb3-4e2c-bc90-388207ed854f-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541406370117-493f70b3-1bb3-4e2c-bc90-388207ed854f-image.png'
 title: 'Memory Network系列2 - End-To-End Memory Networks'
 subtitle: ''
 date: 2018-11-05
@@ -61,4 +61,4 @@ $$\hat a = Softmax(W(o^k + u))$$
 
 ---
 
-![0_1541406368567_493f70b3-1bb3-4e2c-bc90-388207ed854f-image.png](https://bbs.dian.org.cn/assets/uploads/files/1541406370117-493f70b3-1bb3-4e2c-bc90-388207ed854f-image.png)
+![0_1541406368567_493f70b3-1bb3-4e2c-bc90-388207ed854f-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541406370117-493f70b3-1bb3-4e2c-bc90-388207ed854f-image.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://bbs.dian.org.cn/assets/uploads/files/1541474821662-0e4c6bcd-15ac-42e3-b276-4bd7f338a9e3-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541474821662-0e4c6bcd-15ac-42e3-b276-4bd7f338a9e3-image.png'
 title: 'Memory Network系列4 - Improved Dynamic Memory Networks'
 subtitle: ''
 date: 2018-11-06
@@ -28,7 +28,7 @@ DMN+由[1]提出，为DMN的改进模型，相比于DMN，DMN+主要做了以下
 
 DNM+使用了一个由两个部分组成的网络替换掉了原来的GRU，第一部分叫做sentence reader，将由word vector组成的一句话encode为sentence vector；第二部分叫做`Input Fusion Layer`，使用了一个双向GRU提取句子及句子间的依赖信息。
 
-![0_1541474820362_0e4c6bcd-15ac-42e3-b276-4bd7f338a9e3-image.png](https://bbs.dian.org.cn/assets/uploads/files/1541474821662-0e4c6bcd-15ac-42e3-b276-4bd7f338a9e3-image.png) 
+![0_1541474820362_0e4c6bcd-15ac-42e3-b276-4bd7f338a9e3-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541474821662-0e4c6bcd-15ac-42e3-b276-4bd7f338a9e3-image.png) 
 
 **Sentence Reader**
 
@@ -61,7 +61,7 @@ $$\overleftrightarrow{f} = \overrightarrow{f} + \overleftarrow{f}$$
 ## Input Module For VQA
 对于visual question answering，DMN+也提出了一种input module，其包括3个部分： local region feature extraction, visual feature embedding, input fusion layer 。
 
-![0_1541476893852_09dc68a4-0c07-451f-b1d2-5ad9b022d4d4-image.png](https://bbs.dian.org.cn/assets/uploads/files/1541476894953-09dc68a4-0c07-451f-b1d2-5ad9b022d4d4-image.png) 
+![0_1541476893852_09dc68a4-0c07-451f-b1d2-5ad9b022d4d4-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541476894953-09dc68a4-0c07-451f-b1d2-5ad9b022d4d4-image.png) 
 
 **Local Region Feature Extraction**
 
@@ -121,8 +121,8 @@ $$g_i^k=Softmax(Z_i^k)$$
 ## Performance
 
 ### Text QA
-![0_1541483317489_78916598-329b-44b8-88ff-6f5f40a6a42b-image.png](https://bbs.dian.org.cn/assets/uploads/files/1541483318352-78916598-329b-44b8-88ff-6f5f40a6a42b-image.png) 
+![0_1541483317489_78916598-329b-44b8-88ff-6f5f40a6a42b-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541483318352-78916598-329b-44b8-88ff-6f5f40a6a42b-image.png) 
 
 ### VQA
 
-![0_1541483337556_2e84cca5-8c58-4884-9913-20bdad102202-image.png](https://bbs.dian.org.cn/assets/uploads/files/1541483338050-2e84cca5-8c58-4884-9913-20bdad102202-image.png) 
+![0_1541483337556_2e84cca5-8c58-4884-9913-20bdad102202-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541483338050-2e84cca5-8c58-4884-9913-20bdad102202-image.png) 

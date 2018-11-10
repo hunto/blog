@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://bbs.dian.org.cn/assets/uploads/files/1541421588545-99313151-4dd6-45e6-9a19-6b78ba61ec4c-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541421588545-99313151-4dd6-45e6-9a19-6b78ba61ec4c-image.png'
 title: 'Memory Network系列3 - Dynamic Memory Networks'
 subtitle: ''
 date: 2018-11-05
@@ -22,7 +22,7 @@ tags: MemoryNetworks 机器学习 深度学习
 
 ## 实现
 
-![0_1541421581950_99313151-4dd6-45e6-9a19-6b78ba61ec4c-image.png](https://bbs.dian.org.cn/assets/uploads/files/1541421588545-99313151-4dd6-45e6-9a19-6b78ba61ec4c-image.png)
+![0_1541421581950_99313151-4dd6-45e6-9a19-6b78ba61ec4c-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1541421588545-99313151-4dd6-45e6-9a19-6b78ba61ec4c-image.png)
 
 与MemNN类似，DMN也由4个部分组成：
 
