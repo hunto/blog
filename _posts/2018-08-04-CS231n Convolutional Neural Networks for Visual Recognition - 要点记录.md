@@ -66,7 +66,7 @@ $$L_i = -log(softmax_i(X))$$
 # Lecture5
 
 ## 1. Fully Connected Layer -- change dims & length
-![0_1533312327089_42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png](http://bbs.dian.org.cn//assets/uploads/files/1533312331611-42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png)  
+![0_1533312327089_42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533312331611-42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png)  
 
 ## 2. Convolution Layer
 
@@ -98,7 +98,7 @@ Loop:
 
   $$max(0,x)$$
 
-![0_1533312898795_cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png](http://bbs.dian.org.cn//assets/uploads/files/1533312902745-cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png) 
+![0_1533312898795_cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533312902745-cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png) 
 
 ## 3. Vanishing Gradients & Exploding Gradients
 
@@ -120,7 +120,7 @@ Loop:
 
 **Usually inserted after Fully Connected or Convolutional layers, and before nonlinearity.**
 
-![0_1533313764133_12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png](http://bbs.dian.org.cn//assets/uploads/files/1533313772058-12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png) 
+![0_1533313764133_12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533313772058-12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png) 
 
 ![0_1533356513089_f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533356518210-f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png) 
 
