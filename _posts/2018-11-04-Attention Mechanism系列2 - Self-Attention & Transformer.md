@@ -9,9 +9,9 @@ tags: Attention 机器学习 深度学习
 ---
 
 # References
-[1] [Attention Is All You Need](https://arxiv.org/abs/1706.03762) , 12 Jun 2017
-[2] [CS224n笔记 - lecture12 - All Attention & TextCNN](https://hunto.github.io/cs224n/2018/07/19/CS224n%E7%AC%94%E8%AE%B0-lecture12.html)
-[3] [Attention机制详解（二）——Self-Attention与Transformer](https://zhuanlan.zhihu.com/p/47282410)
+[1] [Attention Is All You Need](https://arxiv.org/abs/1706.03762) , 12 Jun 2017  
+[2] [CS224n笔记 - lecture12 - All Attention & TextCNN](https://hunto.github.io/cs224n/2018/07/19/CS224n%E7%AC%94%E8%AE%B0-lecture12.html)  
+[3] [Attention机制详解（二）——Self-Attention与Transformer](https://zhuanlan.zhihu.com/p/47282410)  
 
 
 ---
