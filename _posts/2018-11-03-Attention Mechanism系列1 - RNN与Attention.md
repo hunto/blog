@@ -25,7 +25,7 @@ RNN的hidden state计算公式如下：
 
 $$h_n = f(W^{(hh)}h_{n-1}+W^{(hx)}x_n)$$
 
-其中，\\(f\\) 为激活函数。
+其中，$$f$$ 为激活函数。
 
 ## GRU
 
@@ -45,8 +45,8 @@ $$\tilde h = tanh(W^{(xh)}x_t+W^{(hh)}(r_t \circ h_{t-1}))$$
 
 $$h_t = z_t \circ h_{t-1} + (1-z_t) \circ \tilde h_t$$
 
-* `reset gate`用于控制前一记忆对当前输入的影响程度，若 \\(r_t=0\\)，则之前层的记忆被遗忘。
-* `update gate`用于控制当前输入对隐藏层状态的影响程度，若 \\(z_t=1\\)，则当前状态与输入无关，只会复制前一状态。
+* `reset gate`用于控制前一记忆对当前输入的影响程度，若 $$r_t=0$$，则之前层的记忆被遗忘。
+* `update gate`用于控制当前输入对隐藏层状态的影响程度，若 $$z_t=1$$，则当前状态与输入无关，只会复制前一状态。
 
 ## LSTM
 
@@ -62,17 +62,17 @@ $$h_t = z_t \circ h_{t-1} + (1-z_t) \circ \tilde h_t$$
 
 ![0_1542004416508_d6554604-a848-4574-885d-71b8b2df4eac-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/Attention/1542004418016-d6554604-a848-4574-885d-71b8b2df4eac-image.png) 
 
-经典的RNN结构输入与输出均为相同 \\(N\\) 长度的序列，其将每一节点均作为输出。输入与输出序列长度相同限制了其的应用，可用于视频帧分类、下一字符概率预测等任务。
+经典的RNN结构输入与输出均为相同 $$N$$ 长度的序列，其将每一节点均作为输出。输入与输出序列长度相同限制了其的应用，可用于视频帧分类、下一字符概率预测等任务。
 
 ### 2. N to 1
 
 ![0_1542004812087_6449cbf0-90b4-4e66-bfdb-45cf8eaa7513-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/Attention/1542004815240-6449cbf0-90b4-4e66-bfdb-45cf8eaa7513-image.png) 
 
-`N to 1`结构通过长度为 \\(N\\) 的输入序列得到长度为1的输出，其将最后节点的hidden state作为输出用于下层网络，主要用于分类问题，如：文本分类，视频分类。
+`N to 1`结构通过长度为 $$N$$ 的输入序列得到长度为1的输出，其将最后节点的hidden state作为输出用于下层网络，主要用于分类问题，如：文本分类，视频分类。
 
 ### 3. 1 to N
 
-如果是想通过1得到长度为 \\(N\\) 的序列输出呢？
+如果是想通过1得到长度为 $$N$$ 的序列输出呢？
 
 这里有两种方法：
 
@@ -110,6 +110,7 @@ Seq2Seq的模型应用范围十分广泛，如：机器翻译、语音识别、�
 于是我们想通过将所有encoder的hidden state输出，在不同的decoder时间节点根据当前decoder状态选择不同的c作为输入，来解决这一瓶颈。
 
 **Seq2Seq Attention**
+
 下面我们来详细介绍Seq2Seq中attention的计算
 
 ![0_1542008763353_62964331-a51e-4f10-b16c-e412bb5075fc-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/Attention/1542008764039-62964331-a51e-4f10-b16c-e412bb5075fc-image.png) 
@@ -118,19 +119,19 @@ Seq2Seq的模型应用范围十分广泛，如：机器翻译、语音识别、�
 
 $$[h_1, h_2, ..., h_n]$$
 
-假设decoder当前的隐藏状态是 \\(s_{t-1}\\) ，那么我们可以得到其与每一个 \\(h_j\\) 的关联性
+假设decoder当前的隐藏状态是 $$s_{t-1}$$ ，那么我们可以得到其与每一个 $$h_j$$ 的关联性
 
 $$e_{tj} = a(s_{t-1}, h_j)$$
 
 $$e_t = [e_{t1}, e_{t2}, ..., e_{tn}]$$
 
-这里，\\(a\\) 为计算相关性的方法，常见的有点乘、加权点乘、加权和。
+这里，$$a$$ 为计算相关性的方法，常见的有点乘、加权点乘、加权和。
 
-接着我们使用softmax对 \\(e_t\\) 进行归一化：
+接着我们使用softmax对 $$e_t$$ 进行归一化：
 
 $$a_t = Softmax(e_t)$$
 
-再接着我们用 \\(a_t\\) 对 \\(h\\) 进行加权求和得到当前输入：
+再接着我们用 $$a_t$$ 对 $$h$$ 进行加权求和得到当前输入：
 
 $$c_t = \sum_{j=1}^n a_{tj} \circ h_j$$
 
