@@ -55,8 +55,7 @@ $$p(w|\mathcal{D}) = \frac{P(\mathcal{D}|w)P(w)}{P(D)}$$
 
 $$p(\mathcal{D}) = \int p(\mathcal{D}\ |\ w)p(w)dw$$
 
-* Likelihood Function:  
-  $$p(\mathcal{D}|w)$$
+* Likelihood Function:  $$p(\mathcal{D}丨w)$$
 
 ### 1.2.4 Gaussian Distribution
 
@@ -119,7 +118,7 @@ $$\frac1{\beta_{ML}} = \frac1N\sum_{n=1}^N[y(x_n, W_{ML})- t_n]^2$$
 
 $$p(t, W_{ML}, \beta_{ML}) = \mathcal{N}(t\ |\ y(x,W_{ML}),\beta^{-1}_{ML})$$
 
-根据贝叶斯定理，我们想要得到在 $$x, t$$ 条件下的关于 $$W$$ 的后验概率 p(W 丨 x, t) ，还需要有 $$W$$ 的先验分布，简单起见，我们用高斯分布来表示 $$W$$ 的分布：
+根据贝叶斯定理，我们想要得到在 $$x, t$$ 条件下的关于 $$W$$ 的后验概率 $$p(W 丨 x, t)$$ ，还需要有 $$W$$ 的先验分布，简单起见，我们用高斯分布来表示 $$W$$ 的分布：
 
 $$p(W\ |\ \alpha) = \mathcal{N}(W\ |\ 0, \alpha^{-1}I)=(\frac{\alpha}{2\pi})^{\frac{M+1}2}exp(-\frac\alpha2W^TW)$$
 
