@@ -1,8 +1,8 @@
 ---
 layout: post
-cover: ''
+cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544351696071-f3a510da-59b7-4a91-b3a5-bcfd9f6a8164-image.png'
 title: 'Pattern Recognition and Machine Learning笔记 - section 1'
-subtitle: ''
+subtitle: 'Introduction'
 date: 2019-10-31
 categories: PRML
 tags: PRML 机器学习 深度学习
