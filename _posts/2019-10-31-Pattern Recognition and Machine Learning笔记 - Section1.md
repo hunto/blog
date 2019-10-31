@@ -55,7 +55,8 @@ $$p(w|\mathcal{D}) = \frac{P(\mathcal{D}|w)P(w)}{P(D)}$$
 
 $$p(\mathcal{D}) = \int p(\mathcal{D}\ |\ w)p(w)dw$$
 
-* Likelihood Function: $$p(\mathcal{D}|w)$$
+* Likelihood Function:  
+  $$p(\mathcal{D}|w)$$
 
 ### 1.2.4 Gaussian Distribution
 
@@ -118,7 +119,7 @@ $$\frac1{\beta_{ML}} = \frac1N\sum_{n=1}^N[y(x_n, W_{ML})- t_n]^2$$
 
 $$p(t, W_{ML}, \beta_{ML}) = \mathcal{N}(t\ |\ y(x,W_{ML}),\beta^{-1}_{ML})$$
 
-根据贝叶斯定理，我们想要得到在 $$x, t$$ 条件下的关于 $$W$$ 的后验概率 $$p(W\ |\ x, t)$$ ，还需要有 $$W$$ 的先验分布，简单起见，我们用高斯分布来表示 $$W$$ 的分布：
+根据贝叶斯定理，我们想要得到在 $$x, t$$ 条件下的关于 $$W$$ 的后验概率 p(W 丨 x, t) ，还需要有 $$W$$ 的先验分布，简单起见，我们用高斯分布来表示 $$W$$ 的分布：
 
 $$p(W\ |\ \alpha) = \mathcal{N}(W\ |\ 0, \alpha^{-1}I)=(\frac{\alpha}{2\pi})^{\frac{M+1}2}exp(-\frac\alpha2W^TW)$$
 
@@ -140,7 +141,7 @@ $$\tilde E(W) = \frac12 \sum^N_{n=1}(y(x_n,W)-t_n)^2 + \frac\lambda2W^TW\ \ \ \ 
 
 虽然在上一节已经使用了先验分布来得到后验概率分布，但对于 $$W$$ 来说，我们仍在进行它的分布估计，这并不是贝叶斯观点，在纯粹的贝叶斯方法中，我们应该自始至终地应用概率的乘规则和加规则。所以在之后，我们会对所有 $$W$$ 值进行积分，对于模式识别来说，**这种积分是贝叶斯方法的核心**。
 
-在曲线拟合问题中，我们知道 $$X, T$$ ，目标是预测 $$t$$ 的值，因此我们想要估计 $$t$$ 的分布 $$p(t\ |\ x, X, T)$$
+在曲线拟合问题中，我们知道 $$X, T$$ ，目标是预测 $$t$$ 的值，因此我们想要估计 $$t$$ 的分布 $$p(t\ 丨\ x, X, T)$$
 
   $$ p(t\ |\ x, X, T) = \int p(t\ |\ x, W)p(W | X, T)dW$$
 
