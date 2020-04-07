@@ -5,7 +5,7 @@ keyword: ''
 url: 'https://hunto.github.io' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: ''
+baseurl: 'https://hunto.github.io/blog'
 
 # Navigation links
 nav:
