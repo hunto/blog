@@ -2,10 +2,10 @@
 title: 'Hunto的独立博客'
 description: '计算机'
 keyword: ''
-url: 'https://hunto.github.io' # your host
+url: 'https://hunto.github.io/blog' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: 'https://hunto.github.io/blog/'
+baseurl: ''
 
 # Navigation links
 nav:
