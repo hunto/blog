@@ -67,7 +67,7 @@ x[ix] += h
 
 ### q2_neural
 最关键的地方，这里定义了一个简单的网络：
-![0_1530862803490_9d8b0efe-88e4-4f7a-8ade-c370d54338bd-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS224n/1530862803989-9d8b0efe-88e4-4f7a-8ade-c370d54338bd-image.png) 
+![0_1530862803490_9d8b0efe-88e4-4f7a-8ade-c370d54338bd-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS224n/1530862803989-9d8b0efe-88e4-4f7a-8ade-c370d54338bd-image.png) 
 其中，
 $$h=sigmoid(xW_1+b_1), \hat{y}=softmax(hW_2+b_2)$$
 这些即为网络的前端部分。
