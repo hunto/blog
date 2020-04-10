@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/DL/1538122133972-3b5518ed-8308-4f92-b6fc-3c076a887f14-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/blog/master/assets/img/DL/1538122133972-3b5518ed-8308-4f92-b6fc-3c076a887f14-image.png'
 title: 'Visual Question Answering with Memory-Augmented Networks - 笔记'
 subtitle: ''
 date: 2018-09-28
@@ -16,7 +16,7 @@ tags: VQA 机器学习 深度学习 CV
 在一般的VQA问题中，我们使用梯度下降来更新模型，使用低频截断来减少答案分类数，这样会造成模型对低频答案得到的分数较低，难以得到正确答案。这篇文章介绍了一种新的Memory-Augmented方法来解决这一问题。
 
 ## 模型结构
- ![0_1538122132510_3b5518ed-8308-4f92-b6fc-3c076a887f14-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/DL/1538122133972-3b5518ed-8308-4f92-b6fc-3c076a887f14-image.png) 
+ ![0_1538122132510_3b5518ed-8308-4f92-b6fc-3c076a887f14-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/DL/1538122133972-3b5518ed-8308-4f92-b6fc-3c076a887f14-image.png) 
 
 模型主要有三大块
 ### 1. 问题及图像特征提取
@@ -26,7 +26,7 @@ $$\lbrace v_1, ..., v_N \rbrace, N=196$$
 
 ### 2. Sequential Co-Attention 协同注意力
 
-![0_1538182846732_dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/DL/1538182847906-dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png) 
+![0_1538182846732_dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/DL/1538182847906-dd8bbbee-72b8-4605-a9b4-ba5c366d2810-image.png) 
 
 这里用的是Parallel模型，主要是为了做attention提取出question与image的相关的特征。
 

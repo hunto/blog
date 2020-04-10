@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1542186893441-3a3d7404-2321-40cb-8913-a8d3237f000e-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/blog/master/assets/img/MemoryNetworks/1542186893441-3a3d7404-2321-40cb-8913-a8d3237f000e-image.png'
 title: 'Memory Network系列6 - Gated End-To-End Memory Networks'
 subtitle: 'Gated End-To-End Memory Networks'
 date: 2018-11-14
@@ -23,7 +23,7 @@ tags: MemoryNetworks 机器学习 深度学习
 ## 实现
 Gated End-To-End Memory结构与MeMN2N类似，主要是改变了各hop间的连接方式
 
-![0_1542186888752_3a3d7404-2321-40cb-8913-a8d3237f000e-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1542186893441-3a3d7404-2321-40cb-8913-a8d3237f000e-image.png) 
+![0_1542186888752_3a3d7404-2321-40cb-8913-a8d3237f000e-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/MemoryNetworks/1542186893441-3a3d7404-2321-40cb-8913-a8d3237f000e-image.png) 
 
 这篇论文中使用了 [Highway Networks](https://arxiv.org/abs/1505.00387) 中提出的shortcut结构，最终的公式如下：
 
@@ -35,5 +35,5 @@ $$u^{k+1} = o^k \circ T^k(u^k)+u^k\circ (1 -  T^k(u^k))$$
 
 ## Performance
 
-![0_1542194084795_91a205c2-397a-4302-8112-42f923a411e1-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1542194086824-91a205c2-397a-4302-8112-42f923a411e1-image.png) 
+![0_1542194084795_91a205c2-397a-4302-8112-42f923a411e1-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/MemoryNetworks/1542194086824-91a205c2-397a-4302-8112-42f923a411e1-image.png) 
 

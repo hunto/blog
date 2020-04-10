@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533314431152-88059bbd-1468-437f-a9b9-ffc3109d6364-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS231n/1533314431152-88059bbd-1468-437f-a9b9-ffc3109d6364-image.png'
 title: 'CS231n Convolutional Neural Networks for Visual Recognition - 要点记录'
 subtitle: 'CS231n Convolutional Neural Networks for Visual Recognition'
 date: 2018-08-04
@@ -66,7 +66,7 @@ $$L_i = -log(softmax_i(X))$$
 # Lecture5
 
 ## 1. Fully Connected Layer -- change dims & length
-![0_1533312327089_42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533312331611-42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png)  
+![0_1533312327089_42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS231n/1533312331611-42b2e6af-943e-4e2d-b55a-d1056a29519e-image.png)  
 
 ## 2. Convolution Layer
 
@@ -98,11 +98,11 @@ Loop:
 
   $$max(0,x)$$
 
-![0_1533312898795_cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533312902745-cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png) 
+![0_1533312898795_cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS231n/1533312902745-cdb45c2b-6f24-46ea-b6a9-480d62d51418-image.png) 
 
 ## 3. Vanishing Gradients & Exploding Gradients
 
-[机器学习中梯度消失与梯度爆炸问题详解](https://hunto.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2018/07/17/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E4%B8%8E%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3.html)
+[机器学习中梯度消失与梯度爆炸问题详解](https://blog/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2018/07/17/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E4%B8%8E%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3.html)
 
 ## 4. Weight Initialization
 * Small randon numbers -- NO!
@@ -120,9 +120,9 @@ Loop:
 
 **Usually inserted after Fully Connected or Convolutional layers, and before nonlinearity.**
 
-![0_1533313764133_12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533313772058-12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png) 
+![0_1533313764133_12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS231n/1533313772058-12cd2165-9c01-48a0-971f-55a7a1c0219f-image.png) 
 
-![0_1533356513089_f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533356518210-f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png) 
+![0_1533356513089_f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS231n/1533356518210-f9789dc0-5c43-435c-9b8c-78bc63b2d91d-image.png) 
 
 **Features**
 * Improves gradient flow through the network
@@ -178,7 +178,7 @@ $$x_{t+1}=x_t - \alpha \frac{dx}{\sqrt g +  10^{-7}}$$
   ```
 
 * Adam (full form)
-![0_1533359223607_c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533359225868-c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png) 
+![0_1533359223607_c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS231n/1533359225868-c45b7ca1-dee8-42e7-9fdd-475de3048f58-image.png) 
 
 ## 2. Dropout
-![0_1533359359049_b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/CS231n/1533359363244-b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png) 
+![0_1533359359049_b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/CS231n/1533359363244-b68f889a-cfac-4caa-9f3a-97a7ed978d74-image.png) 

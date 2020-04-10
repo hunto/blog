@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544351696071-f3a510da-59b7-4a91-b3a5-bcfd9f6a8164-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544351696071-f3a510da-59b7-4a91-b3a5-bcfd9f6a8164-image.png'
 title: 'Pattern Recognition and Machine Learning笔记 - section 1'
 subtitle: 'Introduction'
 date: 2019-10-31
@@ -23,17 +23,17 @@ $$E_{RMS} = \sqrt {2E(W)/N}$$
 
 ### 过拟合
 
-![0_1544350839796_2ab6b301-02b7-478c-84ef-f6b38e3e8646-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544350841331-2ab6b301-02b7-478c-84ef-f6b38e3e8646-image.png) 
+![0_1544350839796_2ab6b301-02b7-478c-84ef-f6b38e3e8646-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544350841331-2ab6b301-02b7-478c-84ef-f6b38e3e8646-image.png) 
 
 如上图，不同阶数多项式拟合出的图像。在数据较少的情况下，方程越复杂，越容易过拟合。
 
 * 增大数据集缓解过拟合
 
-![0_1544351102918_2a02ac07-cace-4358-9519-4917f5ef85a4-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544351104185-2a02ac07-cace-4358-9519-4917f5ef85a4-image.png) 
+![0_1544351102918_2a02ac07-cace-4358-9519-4917f5ef85a4-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544351104185-2a02ac07-cace-4358-9519-4917f5ef85a4-image.png) 
 
 * 损失函数加正则项缓解过拟合
 
-![0_1544350951485_6260bda8-5698-46cf-adec-27c627f556f4-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544350952606-6260bda8-5698-46cf-adec-27c627f556f4-image.png) 
+![0_1544350951485_6260bda8-5698-46cf-adec-27c627f556f4-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544350952606-6260bda8-5698-46cf-adec-27c627f556f4-image.png) 
 
 可以看出，过拟合情况下，高次项系数非常大。
 
@@ -43,11 +43,11 @@ $$\tilde E(W) = \frac12 \sum^N_{n=1}(y(x_n,W)-t_n)^2 + \sum^M_i (w_i)^2$$
 
 下表为不同 $$\lambda$$ 拟合的方程的系数值：
 
-![0_1544351317667_a02bb478-29d0-4d1b-a629-a93a58edf50c-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544351319010-a02bb478-29d0-4d1b-a629-a93a58edf50c-image.png) 
+![0_1544351317667_a02bb478-29d0-4d1b-a629-a93a58edf50c-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544351319010-a02bb478-29d0-4d1b-a629-a93a58edf50c-image.png) 
 
 ## 1.2 概率论 (Probability Theory)
 
-![0_1544351694358_f3a510da-59b7-4a91-b3a5-bcfd9f6a8164-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544351696071-f3a510da-59b7-4a91-b3a5-bcfd9f6a8164-image.png) $$$$
+![0_1544351694358_f3a510da-59b7-4a91-b3a5-bcfd9f6a8164-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544351696071-f3a510da-59b7-4a91-b3a5-bcfd9f6a8164-image.png) $$$$
 
 ### 1.2.3 Bayes' theorem
 
@@ -67,7 +67,7 @@ $$\mathcal{N}(x|\mu , \sigma^2) = \frac{1}{(2\pi \sigma^2)^{1/2}}exp(-\frac{1}{2
 
 **最大似然估计的方差偏移问题**
 
-![0_1544412407530_49e0a869-d3b2-47ae-b67f-3a9ac42f2555-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544412408889-49e0a869-d3b2-47ae-b67f-3a9ac42f2555-image.png) 
+![0_1544412407530_49e0a869-d3b2-47ae-b67f-3a9ac42f2555-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544412408889-49e0a869-d3b2-47ae-b67f-3a9ac42f2555-image.png) 
 
 * 计算最大似然解的期望：
     * $$E(\mu_{ML}) = \mu$$ 
@@ -94,11 +94,11 @@ $$p(t\ |\ x,W,\beta)= \mathcal{N}(t\ |\ y(x,W),\beta^{-1})\ \ \ \ \ \ \ (1.60)$$
 
 为了与后续章节统一，这里定义了精度参数 $$\beta$$ ，为方差的倒数。
 
-![0_1544419019668_4a0f52c0-284d-4da2-85f6-d25e6c6dfa01-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544419020233-4a0f52c0-284d-4da2-85f6-d25e6c6dfa01-image.png) 
+![0_1544419019668_4a0f52c0-284d-4da2-85f6-d25e6c6dfa01-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544419020233-4a0f52c0-284d-4da2-85f6-d25e6c6dfa01-image.png) 
 
 由公式1.60我们可以得到最大似然方程如下：
 
-![0_1544419423041_4ab8f055-78f8-4869-aaa4-ee66291d069c-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544419423625-4ab8f055-78f8-4869-aaa4-ee66291d069c-image.png) 
+![0_1544419423041_4ab8f055-78f8-4869-aaa4-ee66291d069c-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544419423625-4ab8f055-78f8-4869-aaa4-ee66291d069c-image.png) 
 
 * **使用最大似然解表示$$W$$**
 
@@ -146,11 +146,11 @@ $$\tilde E(W) = \frac12 \sum^N_{n=1}(y(x_n,W)-t_n)^2 + \frac\lambda2W^TW\ \ \ \ 
 
 这里与上一节的不同之处在于，$$W$$ 的分布是通过 $$X, T$$ 确定的，而非上面为了简单起见定义的高斯分布。
 
-![0_1544424416208_1a172aaa-0a8f-4074-8186-cdfd5c5831a9-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544424417329-1a172aaa-0a8f-4074-8186-cdfd5c5831a9-image.png) 
+![0_1544424416208_1a172aaa-0a8f-4074-8186-cdfd5c5831a9-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544424417329-1a172aaa-0a8f-4074-8186-cdfd5c5831a9-image.png) 
 
 我们可以从公式1.69中看到，$$t$$ 的分布的均值和方差都依赖于 $$X$$ ，公式1.71的第一项表示预测值 t 的不确定性，在最大似然求解方法中，这种不确定性用 $$\beta^{-1}$$ 表达。然而，第二项也对 $$W$$ 的不确定性有影响，这是贝叶斯方法得到的结果。
 
-![0_1544424771011_372da5aa-4556-494f-9242-3311fe35b7ad-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544424777463-372da5aa-4556-494f-9242-3311fe35b7ad-image.png) 
+![0_1544424771011_372da5aa-4556-494f-9242-3311fe35b7ad-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544424777463-372da5aa-4556-494f-9242-3311fe35b7ad-image.png) 
 
 ---
 
@@ -236,7 +236,7 @@ $$E[x] = \int_{-\infty}^\infty \frac{1}{(2\pi\sigma^2)^\frac12}exp(-\frac{1}{2\s
 
 $$E[x] = \mu \int_{-\infty}^\infty \mathcal{N}(x | u, \sigma^2) dx = \mu$$
 
-![0_1544596120441_6411c701-5162-4776-9b50-3c30e2a021d5-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544596121964-6411c701-5162-4776-9b50-3c30e2a021d5-image.png)
+![0_1544596120441_6411c701-5162-4776-9b50-3c30e2a021d5-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544596121964-6411c701-5162-4776-9b50-3c30e2a021d5-image.png)
 
 ### 1.9 高斯分布的众数（即概率最大值）推导
 
@@ -244,7 +244,7 @@ $$\frac{d\mathcal{N}(x | \mu, \sigma^2)}{dx} = - \mathcal{N}(x | \mu, \sigma^2) 
 
 当 $$x = \mu$$ 时，有最大值。
 
-![0_1544596983506_2933c4ff-2900-40ab-ad28-50830ae01039-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/PRML/1544596984570-2933c4ff-2900-40ab-ad28-50830ae01039-image.png)
+![0_1544596983506_2933c4ff-2900-40ab-ad28-50830ae01039-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/PRML/1544596984570-2933c4ff-2900-40ab-ad28-50830ae01039-image.png)
 
 ### 1.10 独立变量相加的期望方差证明
 

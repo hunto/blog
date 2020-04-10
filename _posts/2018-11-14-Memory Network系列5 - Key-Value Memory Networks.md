@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1542161582167-db2dfd8c-60df-4f6e-8416-626dc17cfb7e-image.png'
+cover: 'https://raw.githubusercontent.com/hunto/blog/master/assets/img/MemoryNetworks/1542161582167-db2dfd8c-60df-4f6e-8416-626dc17cfb7e-image.png'
 title: 'Memory Network系列5 - Key-Value Memory Networks'
 subtitle: 'Key-Value Memory Networks for Directly Reading Documents'
 date: 2018-11-14
@@ -10,7 +10,7 @@ tags: MemoryNetworks 机器学习 深度学习
 
 # References
 1. [Key-Value Memory Networks for Directly Reading Documents](https://arxiv.org/abs/1606.03126) , 9 Jun 2016  
-2. [Memory Network系列2 - End-To-End Memory Networks](https://hunto.github.io/memorynetworks/2018/11/05/Memory-Network%E7%B3%BB%E5%88%972-End-To-End-Memory-Networks.html)
+2. [Memory Network系列2 - End-To-End Memory Networks](https://blog/memorynetworks/2018/11/05/Memory-Network%E7%B3%BB%E5%88%972-End-To-End-Memory-Networks.html)
 
 ---
 
@@ -23,7 +23,7 @@ tags: MemoryNetworks 机器学习 深度学习
 
 Key-Value Memory Network基于End-To-End Memory Network做了修改，主要改变了memory的寻址与输出。
 
-![0_1542161581331_db2dfd8c-60df-4f6e-8416-626dc17cfb7e-image.png](https://raw.githubusercontent.com/hunto/hunto.github.io/master/assets/img/MemoryNetworks/1542161582167-db2dfd8c-60df-4f6e-8416-626dc17cfb7e-image.png) 
+![0_1542161581331_db2dfd8c-60df-4f6e-8416-626dc17cfb7e-image.png](https://raw.githubusercontent.com/hunto/blog/master/assets/img/MemoryNetworks/1542161582167-db2dfd8c-60df-4f6e-8416-626dc17cfb7e-image.png) 
 
 ## Memory
 由于大数据库中的数据量很大，memory首先通过key hashing操作选出与问题相关的 $$N$$ 条数据，再使用与End-To-End Memory类似的操作在选出的数据中进行操作。
